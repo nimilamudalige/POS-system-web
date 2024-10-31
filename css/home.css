@@ -1,0 +1,315 @@
+body {
+  background-color: rgb(4, 17, 45);
+  font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    padding-top: 0px;
+    margin: 0;
+  }
+  
+
+/* .headder{
+  display: flex;
+  justify-content: space-around;
+    width: 100vw;
+    background-color: rgb(4, 4, 49);
+    height: 12vh;
+    border-bottom: 1px solid aliceblue;
+} */
+
+  .logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .logo-text {
+    margin: 5px;
+    color: rgb(101, 2, 2);
+  }
+  
+  .nav-bar {
+    width: 200px;
+    height: 88%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .nav-button-img {
+    width: 45px;
+    height: 45px;
+  }
+  
+  .nav-button {
+    padding-top: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    background-color: transparent;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    transition: background-color 0.3s ease; 
+  }
+  
+  .nav-button-text {
+    margin: 13px;
+    color: #51f0e3;
+    text-decoration: none;
+  }
+  
+  .nav-button:hover {
+    background-color: #013c57;
+    color: white;
+  }
+  
+  .nav-button:hover h4 {
+    color: white;
+  }
+
+ .hero-section{
+    display: flex;
+    background-color: rgb(4, 17, 45);
+    height: 100%;
+    width: 100vw;
+    position: fixed;
+ }
+
+ .hero-img{
+    width: 88vw;
+    height: 89vh;
+    object-fit: cover;
+    opacity: 30%;
+ }
+
+ .card-containner{
+  margin: 0;
+  display: flex;
+ 
+ }
+
+ .content{
+  position: absolute;
+  top: 90px;
+  left: 15vw;
+ }
+
+ .card{
+  color: aliceblue;
+  margin: 60px 110px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #013c57;
+  opacity: 65%;
+  width: 10vw;
+  height: 27vh;
+  padding-top: 12px;
+  border-radius: 10px;
+  box-shadow: 0 2px 3px;
+ }
+
+ .card:hover{
+  background-color: aliceblue;
+  color: navy;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+  transition-timing-function:ease-in-out;
+  cursor: pointer;
+ }
+
+.icon{
+  font-size: 2rem;
+  margin: 5px;
+}
+ .numbers{
+  font-size: 2.2rem;
+  font-weight: 800;
+  margin: 15px 5px;
+ }
+
+ .cardName{
+  font-size: 1.5rem;
+  margin: 0;
+ }
+
+ .social-icons{
+  border-top: 1px solid aliceblue;
+  margin-top: 25px;
+  font-size: 1.7rem;
+  color: aliceblue;
+  width: 50vw;
+  text-align: center;
+  margin-left: 185px;
+ }
+
+ .social:hover{
+  font-size: 1.9rem;
+  transition-duration: 0.5s;
+ }
+
+ .social{
+    margin: 30px 5px;
+    color: aliceblue;
+ }
+
+ .welcome{
+  font-size: 3rem;
+  font-family: "Playwrite GB S", cursive;
+  font-optical-sizing: auto;
+  font-style: italic;
+  text-align: center;
+  color: aliceblue;
+  margin-bottom: 0;
+ }
+
+ .name{
+  color: aliceblue;
+  font-style: oblique;
+  
+ }
+
+ .search{
+  width: 220px;
+  margin-left: 50px;
+  margin-right: 5px;
+  height: 35px;
+  border-radius: 5px;
+  margin-top: 25px;
+}
+
+.sbtn{
+  background-color: #013c57;
+  color: aliceblue;
+  height: 25px;
+  font-size: 1.2rem;
+  width: 37px;
+  border-radius: 10px;
+  padding: 3px;
+  margin-right: 10px;
+}
+
+.img-logo{
+  height: 70px;
+  width: 24vw;
+  margin: 0;
+}
+
+/* background-color: cyan; */
+/* background: linear-gradient(to top,rgb(110, 19, 137),rgb(0, 255, 187));
+background-repeat: no-repeat;
+background-attachment: fixed; */
+/* background-image: url(/assets/images/istockphoto-1489061272-2048x2048.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+background-attachment: fixed;
+color: rgb(235, 238, 242); */
+
+/* Base Styles (Same as before, with variables) */
+
+:root {
+  --primary-bg: rgb(4, 4, 49);
+  --secondary-bg: #013c57;
+  --highlight: aliceblue;
+  --text-color: navy;
+  --transition-speed: 0.3s;
+}
+
+/* Header */
+.headder {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  background-color: var(--primary-bg);
+  padding: 0 1rem;
+  height: 12vh;
+}
+
+/* Burger Icon */
+.burger-icon {
+  display: none;
+  color: var(--highlight);
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+/* Navigation Styles */
+.nav-bar {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: transparent;
+  padding: 10px;
+  margin: 5px;
+  border: none;
+  cursor: pointer;
+  transition: background-color var(--transition-speed);
+}
+
+.nav-button:hover {
+  background-color: var(--secondary-bg);
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  /* Hide the nav-bar by default */
+  .nav-bar {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 12vh;
+      right: 0;
+      width: 50%;
+      background-color: var(--primary-bg);
+      z-index: 1000;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+
+  /* Show the nav-bar when menu is active */
+   .nav-bar.menu-active {
+    display: flex;
+    left: 0; /* Slide in from the left */
+}
+
+
+  /* Show the burger icon */
+  .burger-icon {
+      display: block;
+  }
+
+  .hero-img {
+      height: 50vh;
+  }
+
+  .content {
+      top: 60px;
+      left: 5vw;
+  }
+
+  .card-containner {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .card {
+      width: 80vw;
+      margin: 10px 0;
+  }
+
+  .welcome {
+      font-size: 2rem;
+  }
+  .social-icons{
+    margin-left: 90px;
+  }
+}
